@@ -1,4 +1,4 @@
-[website](https://ez-postl-m1a90cexu-mishra18.vercel.app/)
+[website](https://ez-post-mishra18.vercel.app/)
 
 ## Tech Stack
 
