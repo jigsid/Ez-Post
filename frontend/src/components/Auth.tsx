@@ -27,6 +27,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
     }
   }
 
+<<<<<<< HEAD
   return (
     <div className="h-screen flex justify-center flex-col">
       <div className="flex justify-center">
@@ -36,6 +37,37 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
               {type === "signin"
                 ? "Sign In to your account"
                 : "Create your account"}
+=======
+                    <div className="text-slate-500">
+                        {type === "signin" ? "Don't have an account?" : "Already have an account?" }
+                        <Link className="pl-2 underline" to={type === "signin" ? "/signup" : "/signin"}>
+                            {type === "signin" ? "Sign up" : "Sign in"}
+                        </Link>
+                    </div>
+                </div>
+                
+                <div className="space-y-4">
+                    {type === "signup" ? <LabelledInput label="Name" placeholder="name" onChange={(e) => {
+                        setPostInputs({
+                            ...postInputs,
+                            name: e.target.value
+                        })
+                    }} /> : null}
+                    <LabelledInput label="Email" placeholder="email@gmail.com" onChange={(e) => {
+                        setPostInputs({
+                            ...postInputs,
+                            email: e.target.value
+                        })
+                    }} />
+                    <LabelledInput label="Password" type={"password"} placeholder="password(min char 5)" onChange={(e) => {
+                        setPostInputs({
+                            ...postInputs,
+                            password: e.target.value
+                        })
+                    }} />
+                    <button onClick={sendRequest} type="button" className="mt-8 w-full text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">{type === "signup" ? "Sign up" : "Sign in"}</button>
+                </div>
+>>>>>>> 9bbe80d45113c52a2af1f0969928f5e935e8293f
             </div>
 
             <div className="text-slate-500">
@@ -126,5 +158,8 @@ function LabelledInput({
         required
       />
     </div>
+<<<<<<< HEAD
   );
+=======
+>>>>>>> 9bbe80d45113c52a2af1f0969928f5e935e8293f
 }
