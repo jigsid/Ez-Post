@@ -1,4 +1,4 @@
-[website](https://ez-post-rho.vercel.app/)
+[website](https://ez-post-mishra18.vercel.app/)
 
 ## Tech Stack
 
