@@ -31,7 +31,7 @@ const Home = () => {
             type="button"
             className="w-full bg-gray-700 text-white font-semibold text-lg py-3 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:bg-gray-600 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-gray-500"
           >
-            Sign In
+            Login
           </button>
         </Link>
       </div>
